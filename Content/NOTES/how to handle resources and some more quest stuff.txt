@@ -1,0 +1,26 @@
+RESOURCES:
+
+make seperate type for them
+make resourceInventory
+display those seperately of inventory
+'''''press p for profile, i for inventory page(s) on profile??
+
+
+can possible make one type, all 0 stats, itemType 8, i think 7 is max right now
+itemID is whatever is next
+
+things drop if i do this
+
+need for quests maybe this would work
+-> same as itemType
+-> gives them all IDs becuase in Items.csv
+-> have monsters drop them
+-> quest can check the resourceInv array
+-> maybe have static locations in resInv?
+->> maybe non static just linear search through the inv
+->> shouldnt be too slow if not big can work on it if its slow 
+-> quest check after type 8 drops
+-> forced turn in after x amount of items?? 
+->> allow ability to press button for quest list
+->> have program ask to turn in and also have a section to turn in quests
+->>> normal input command for what to turn in, still numerical

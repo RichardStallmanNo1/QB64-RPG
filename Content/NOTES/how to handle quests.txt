@@ -1,0 +1,62 @@
+MAYBE USE GET/PUT??
+MAYBE NOT
+
+
+
+Quests:
+Seperate csv files for text and statistics?
+
+QuestRewards:
+0 for no reward
+line by line
+itemID for reward aka not 0
+maybe -1 for no reward and 0 for end of line not sure yet??
+
+QuestStat file layout:
+    x, y, type of quest, (x, y)/(monID,monAmt)/(itemID, itemAmt)
+    last part is based off of what the type of quest is
+
+QuestText:
+Line is for what quest/what part
+Know what part to read from (Name$)QStats
+
+NameQStats:
+Line by line as usual
+-1 is finished, 0 is not started, 1 part complete, etc
+HOW TO KNOW HOW MANY PARTS?? - QuestText until 0??
+-------
+in program
+
+have questtype
+x, y as single
+type as single
+monID/Amt as int
+itemID/Amt as int
+killColl as int
+travelX/Y as single
+END TYPE
+
+display quest stats at bottom under map
+
+check after monster killed
+-> IF questMonID = combatMonster.numID
+->> if it did then increase killColl by 1
+->>> if killColl = mon/itemAmt then do next quest part
+->>>> if quest finished then give rewards
+->>>> if quest not finished update (Name$)QStats
+->>>> maybe have a way to give stuff before quest end
+
+
+->>>> add seperate resource inventory??
+->>>> make stackable resources??
+->>>> not bother with resources yet just items
+->>>> probably make items drop more frequently that have little use or are weak, higher drop rates on them
+
+
+
+
+
+
+
+
+

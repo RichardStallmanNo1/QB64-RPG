@@ -1,0 +1,1 @@
+Sizes is for inventory size only at the moment
